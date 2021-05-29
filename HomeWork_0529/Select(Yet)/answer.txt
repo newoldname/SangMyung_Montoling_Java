@@ -1,0 +1,110 @@
+1.
+(1): Student, GraduateStudent
+(2): Student<-GraduateStudent
+(3): ?? 
+(4): 
+public Student(int a, String b){
+    this.number = a;
+    this.name = b;
+}
+
+public GraduateStudent(int a, String b, String c){
+    super(a,b);
+    this.lab = c;
+}
+
+(5): 1
+
+2. 
+클래스 A 생성자
+클래스 B 생성자
+클래스 C 생성자
+
+3. 
+(1): y,z,w
+(2): 2, 비어 있는 메모리 공간이 생김
+
+4. 
+class B extends A{
+    public B(char c){
+        super(c);
+    }
+}
+
+5. 
+(1): B
+(2): A
+(3): super.print()
+
+6. 
+class B extends A{
+    @override
+    public abstract void print(){
+        System.out.println("A");
+    }
+}
+
+P4
+1. 
+class Pizza extends Circle{
+    String name;
+    public Pizza(String a, int b){
+        super(b);
+        this.name = a;
+    }
+
+    public void print(){
+        return "피자의 종류: " + name + ", 피자의 크기: " + super.radius;
+    }
+}
+
+2. 
+class Bird extends Animal{
+    public Bird(){
+        super();
+    }
+
+    public void fly(){
+        System.out.println("날을 수 있음");
+    }
+
+    public void sing(){
+        System.out.println("노래 부를 수 있음");
+    }
+}
+
+3. 
+class Bird implements Animal{
+    public void walk(){
+        System.out.println("걸을 수 있음");
+    }
+
+    public void fly(){
+        System.out.println("날을 수 있음");
+    }
+
+    public void sing(){
+        System.out.println("노래 부를 수 있음");
+    }
+}
+
+4. 
+class Soccer exrends Sports{
+    @override
+    public String getName(){
+        return "축구";
+    }
+    @override
+    public int getPlayers(){
+        return 11;
+    }
+}
+
+5. 
+class ColorRectangle extends Rectangle{
+    public String color;
+    public ColorRectangle(int a, int b, String c){
+        super(a,b);
+        this.color = c;
+    }
+}
